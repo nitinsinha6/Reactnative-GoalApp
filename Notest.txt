@@ -1,0 +1,65 @@
+import { StyleSheet, Text, View, Button } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={{
+      padding:50,
+      flexDirection: 'column',
+      justifyContent:'space-around',
+      width:'80%', 
+      height:300, 
+      alignItems:'center'
+      }}>
+
+   {/* <Text style={styles.dummyText}>Hello Worlds</Text>
+
+    <View><Button title='Login'/ > </View> */}
+
+    <View 
+    style ={{
+      backgroundColor:'red',
+      justifyContent: 'center',
+      alignItems : 'center',
+      flex:1
+    }}>
+     <Text> RED </Text>
+    </View>
+      <View 
+       style ={{
+        backgroundColor:'green',
+        justifyContent: 'center',
+        alignItems : 'center',
+        flex:1
+      }} 
+      >
+        <Text> Green </Text>
+      </View>
+      <View 
+       style ={{
+        backgroundColor:'yellow',
+        justifyContent: 'center',
+        alignItems : 'center',
+        flex:1
+      }}
+      > 
+      <Text> Yellow </Text>
+
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  dummyText : {
+    margin: 20,
+    borderWidth: 5,
+    borderColor:'red', 
+    padding: 8
+  }
+});
